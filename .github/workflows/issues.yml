@@ -6,4 +6,4 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - name: Print context
-        run: echo "${{ toJSON(github) }}"
+        run: echo "${{ toJSON(github.event) }}"
