@@ -1,0 +1,9 @@
+name: Run on new issue
+on: issues
+jobs:
+  print:
+    name: Print GitHub context
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Print context
+        run: echo "${{ toJSON(github) }}"
